@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this file exists -->
+    <title>Interactive Navigation Menu</title>
+</head>
+
+<body>
+
+    <nav id="navbar"> <!-- Fixed class issue -->
+        <div class="logo">My Website</div>
+        <ul class="nav-links"> <!-- Added correct class -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <section>
+        <h1>Scroll Down to See the Effect</h1>
+        <p>This is a simple interactive navigation menu.</p>
+
+        </section>
+
+        
+            
+    </header>
+    <section class="content">
+        <h2>About Me</h2>
+        <p>This is an example paragraph. More content here...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+    </section>
+    
+    <section class="content">
+        <h2>Services</h2>
+        <p>Here are the services I offer...</p>
+    </section>
+    <script>
+      // Change navbar background on scroll
+      window.addEventListener('scroll', function() {
+          let navbar = document.getElementById('navbar');
+          if (window.scrollY > 50) {
+              navbar.classList.add('scrolled');
+          } else {
+              navbar.classList.remove('scrolled');
+          }
+      });
+    </script>
+
+</body>
+</html>
